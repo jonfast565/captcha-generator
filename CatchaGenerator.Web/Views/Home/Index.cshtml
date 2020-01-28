@@ -1,0 +1,33 @@
+﻿<div class="container">
+    <div class="header">CaptchaGenerator</div>
+    <div class="subheader">Complete the form to generate a Captcha: </div>
+    <div class="divider"></div>
+    <form id="form" novalidate="novalidate">
+        <div class="input-element">
+            <label for="marker">Captcha Text:</label>
+            <input type="text"
+                   name="message"
+                   id="message"
+                   value="ABCDEF"
+                   data-rule-required="false" />
+        </div>
+        <div class="input-element">
+            <label for="markertext">Random Captcha w/ Specified Number of Chars</label>
+            <input type="text"
+                   name="numberOfCharacters"
+                   id="numberOfCharacters"
+                   data-rule-number="true"
+                   value="0" />
+        </div>
+    </form>
+    <div class="divider"></div>
+    <div class="button-group">
+        <button class="submit-button" type="button">Generate Captcha</button>
+        <button class="clear-button" type="button">Clear Captcha</button>
+    </div>
+    <div class="divider top-margin"></div>
+    <div class="result-view">
+        <div class="subheader">Result</div>
+        <div class="result"></div>
+    </div>
+</div>
